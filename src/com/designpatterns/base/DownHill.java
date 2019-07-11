@@ -4,7 +4,7 @@ import com.designpatterns.java.BikeColor;
 
 public class DownHill extends MountainBike {
 
-    protected DownHill(WheelInterface wheel, BikeColor color){
+    public DownHill(WheelInterface wheel, BikeColor color){
 
         super(wheel, color);
 
@@ -12,7 +12,7 @@ public class DownHill extends MountainBike {
 
     }
 
-    protected DownHill(WheelInterface wheel){
+    public DownHill(WheelInterface wheel){
 
         this(wheel, BikeColor.GREEN);
 

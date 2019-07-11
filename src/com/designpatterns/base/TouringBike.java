@@ -16,5 +16,8 @@ public class TouringBike extends RoadBike{
     }
 
 
-
+    @Override
+    public float getPrice() {
+        return 570.00f;
+    }
 }

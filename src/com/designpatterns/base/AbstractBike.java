@@ -12,12 +12,10 @@ public abstract class AbstractBike implements BikeInterface {
         this.color = color;
 
 
-
     }
 
-    protected AbstractBike(WheelInterface wheel){
+    protected AbstractBike(WheelInterface wheel) {
         this(wheel, BikeColor.UNPAINTED);
-
 
 
     }
@@ -39,7 +37,30 @@ public abstract class AbstractBike implements BikeInterface {
     }
 
     @Override
+    public float getPrice() {
+        return 900.00f;
+    }
+
+
+    @Override
+    public void cleanFrame() {
+        System.out.println("Cleaning Frame.....");
+
+    }
+
+    @Override
+    public void airTires() {
+        System.out.println("Airing Tires.......");
+    }
+
+
+    @Override
+    public void testRide() {
+        System.out.println("Taking it for a test ride.....");
+    }
+
+    @Override
     public String toString() {
-        return getClass().getSimpleName() + " (" + wheel + ", "+ color + ")";
+        return getClass().getSimpleName() + " (" + wheel + ", " + color +", price = $" + getPrice() + ")";
     }
 }

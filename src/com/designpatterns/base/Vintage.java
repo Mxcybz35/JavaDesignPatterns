@@ -16,4 +16,8 @@ public class Vintage extends RoadBike{
 
     }
 
+    @Override
+    public float getPrice() {
+        return 600.00f;
+    }
 }

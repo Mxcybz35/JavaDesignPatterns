@@ -14,10 +14,9 @@ public abstract class RoadBike extends AbstractBike {
     protected RoadBike(WheelInterface wheel){
         this(wheel, BikeColor.BLACK);
     }
-   protected MountainBike(WheelInterface wheel){
-        this(wheel, BikeColor.CHROME);
 
-   }
-
-
+    @Override
+    public float getPrice() {
+        return 670.00f;
+    }
 }

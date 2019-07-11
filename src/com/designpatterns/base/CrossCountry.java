@@ -19,4 +19,8 @@ public class CrossCountry extends MountainBike{
 
     }
 
+    @Override
+    public float getPrice() {
+        return 850.00f;
+    }
 }
